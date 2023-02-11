@@ -1,0 +1,587 @@
+{
+  "id": "17e7d5d4-f58c-4639-874f-69b1cb1e2dde",
+  "version": "2.0",
+  "name": "Lesson25",
+  "url": "https://www.notino.ua/",
+  "tests": [{
+    "id": "0b53b4cb-1b1f-49ff-bdba-01669382bf91",
+    "name": "Registration valid",
+    "commands": [{
+      "id": "4e726515-5426-4135-a718-3731eb0c69c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.notino.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04c0fd1a-2672-4e6b-b0c4-dbde7d0335da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "274e9710-d75c-415e-8426-5aee9017228c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.o2UbUNbK1LzoVuoBzSeA > svg",
+      "targets": [
+        ["css=.o2UbUNbK1LzoVuoBzSeA > svg", "css:finder"]
+      ],
+      "value": "20000"
+    }, {
+      "id": "d4a8f610-44b0-47c1-8122-8ae5e2d49b51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.o2UbUNbK1LzoVuoBzSeA > svg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30153841-899c-4aa4-9456-c44f764d17a7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Зареєструватися')]",
+      "targets": [
+        ["linkText=Зареєструватися", "linkText"],
+        ["css=.register-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Зареєструватися')]", "xpath:link"],
+        ["xpath=//form[@id='loginCaptcha']/fieldset/p[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Зареєструватися')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "71e95465-b898-4213-8b55-bdbb406e93c0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Зареєструватися')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a60006d1-75be-4ff3-abdb-6c36988e8a81",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@id='register-email']",
+      "targets": [
+        ["id=register-email", "id"],
+        ["name=register-email", "name"],
+        ["css=#register-email", "css:finder"],
+        ["xpath=//input[@id='register-email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrace']/div/fieldset/p/span/input", "xpath:idRelative"],
+        ["xpath=//div/fieldset/p/span/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "9372af7f-42cd-4a32-9103-6ea9b9826381",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='register-email']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7823199-d260-4256-b96d-19c28076b373",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='register-email']",
+      "targets": [],
+      "value": "titarchuckmaya@gmail.com"
+    }, {
+      "id": "14e47b7b-1b0e-49f9-92df-5ff04e97c246",
+      "comment": "",
+      "command": "click",
+      "target": "css=#register-pwd",
+      "targets": [
+        ["id=register-pwd", "id"],
+        ["name=register-pwd", "name"],
+        ["css=#register-pwd", "css:finder"],
+        ["xpath=//input[@id='register-pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordMeter']/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e49e382b-1b0d-4258-918c-e4ce21e6110a",
+      "comment": "",
+      "command": "type",
+      "target": "css=#register-pwd",
+      "targets": [],
+      "value": "luxury1202"
+    }, {
+      "id": "4cb223e3-c2cf-4388-afa9-f5001ca9024b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.checkbox__value",
+      "targets": [
+        ["css=.checkbox__value", "css:finder"],
+        ["xpath=//form[@id='registrace']/div/fieldset/p[2]/label/span", "xpath:idRelative"],
+        ["xpath=//p[2]/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Хочу отримувати інформацію про новинки, акції та знижки')]", "xpath:innerText"]
+      ],
+      "value": "Хочу отримувати інформацію про новинки, акції та знижки"
+    }, {
+      "id": "81cddf0a-408a-4ac2-a3b3-6a2e209f23f0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//p[2]/label/span",
+      "targets": [
+        ["css=.checkbox__value", "css:finder"],
+        ["xpath=//form[@id='registrace']/div/fieldset/p[2]/label/span", "xpath:idRelative"],
+        ["xpath=//p[2]/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Хочу отримувати інформацію про новинки, акції та знижки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0c11660-af19-4299-a791-ca84f23cf74e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[@id='submitRegistration']",
+      "targets": [
+        ["id=submitRegistration", "id"],
+        ["css=#submitRegistration", "css:finder"],
+        ["xpath=//button[@id='submitRegistration']", "xpath:attributes"],
+        ["xpath=//form[@id='registrace']/div/fieldset/p[3]/button", "xpath:idRelative"],
+        ["xpath=//div/fieldset/p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Реєстрація')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6dbcb512-e8f7-4339-ad9b-7373f10a39ba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='submitRegistration']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5208bfb3-7e27-4fa4-b4ef-daba30a13fce",
+    "name": "Invalid enter",
+    "commands": [{
+      "id": "2bc441a6-cef0-451c-abb4-426163960230",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.notino.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4385137-76c4-43d8-9e60-2bc942035c80",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9f452b9-3811-4b38-a709-fbbbe3fb9123",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.o2UbUNbK1LzoVuoBzSeA > svg",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "22195230-0cec-4e43-8976-2f588ed86024",
+      "comment": "",
+      "command": "click",
+      "target": "css=.o2UbUNbK1LzoVuoBzSeA > svg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2310cf7-66a7-49b1-95d0-fcf0f1b25db0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@id='login-name']",
+      "targets": [
+        ["id=login-name", "id"],
+        ["name=logon_login", "name"],
+        ["css=#login-name", "css:finder"],
+        ["xpath=//input[@id='login-name']", "xpath:attributes"],
+        ["xpath=//form[@id='loginCaptcha']/fieldset/p/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "922de4bf-0c90-4118-993a-e2a1ad3e747e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='login-name']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f021d2b8-defb-4348-86fa-a2198b6f9f05",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='login-name']",
+      "targets": [],
+      "value": "yulia@gmail.com"
+    }, {
+      "id": "d6d9911c-fb9f-4fc9-bed2-ed5e068a4829",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='login-pwd']",
+      "targets": [
+        ["id=login-pwd", "id"],
+        ["name=logon_password", "name"],
+        ["css=#login-pwd", "css:finder"],
+        ["xpath=//input[@id='login-pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='loginCaptcha']/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "226e22e5-80ad-46ce-9f91-998e5b965f6e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='login-pwd']",
+      "targets": [],
+      "value": "luxury1202"
+    }, {
+      "id": "ed67295d-8416-4101-a135-d8b563df56cc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//form[@id='loginCaptcha']/fieldset/p[3]/button",
+      "targets": [
+        ["id=submitLogin", "id"],
+        ["css=#submitLogin", "css:finder"],
+        ["xpath=//button[@id='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='loginCaptcha']/fieldset/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc5ce0cd-be09-4ded-88c4-ffb9011703db",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='loginCaptcha']/fieldset/p[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4793331-58e2-409d-9f8d-9018a473ffc3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//form[@id='loginCaptcha']/fieldset/p/span/span",
+      "targets": [
+        ["css=.inp-text-wrapper > .message", "css:finder"],
+        ["xpath=//form[@id='loginCaptcha']/fieldset/p/span/span", "xpath:idRelative"],
+        ["xpath=//p/span/span", "xpath:position"]
+      ],
+      "value": "40000"
+    }, {
+      "id": "09280578-bf08-43af-bd05-f5d3fae1b1cf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//form[@id='loginCaptcha']/fieldset/p/span/span",
+      "targets": [],
+      "value": "Помилка: невірна електронна адреса або пароль."
+    }]
+  }, {
+    "id": "27adf0b2-c9e9-4b5e-b66a-9b1ff3467922",
+    "name": "Valid search",
+    "commands": [{
+      "id": "b72a74ad-4f03-4f2b-b999-a75194789aa1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.notino.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d324bb8b-c1aa-4519-ae08-74a520283bb5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7196ce87-134b-4d0b-bbc5-8a78d88f903d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.lFucXz0sT__aBdEeeFBH",
+      "targets": [
+        ["css=.lFucXz0sT__aBdEeeFBH", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//header[@id='pageHeader']/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a1e4383e-514a-4fe2-adf1-f9c408613a6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lFucXz0sT__aBdEeeFBH",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c7f563e-ff51-4a4b-b99c-baeca7f8fcd7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.lFucXz0sT__aBdEeeFBH",
+      "targets": [],
+      "value": "кушон"
+    }, {
+      "id": "3301ae5b-3242-44fb-b7b1-7ae2284a28c5",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='header-suggestProductCol']",
+      "targets": [
+        ["id=header-suggestProductCol", "id"],
+        ["css=#header-suggestProductCol", "css:finder"],
+        ["xpath=//div[@id='header-suggestProductCol']", "xpath:attributes"],
+        ["xpath=//header[@id='pageHeader']/div[2]/div[3]/div[3]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "7a6f2d58-d2f0-40bf-a1f5-a367d590aaec",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.xeqbdKHcSncDGkcaTROW > svg",
+      "targets": [
+        ["css=.xeqbdKHcSncDGkcaTROW > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0388993-253a-4303-b16d-8ea13be7aa43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xeqbdKHcSncDGkcaTROW > svg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f72fa018-61d6-4355-8e27-ba9d5fbf20d2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@id='col-annot']/h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='col-annot']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "4bffd3ff-16f2-4098-baec-6ca1f2c37b7b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='col-annot']/h1",
+      "targets": [],
+      "value": "Результат пошуку \"кушон\"\\nКількість товарів: 1"
+    }]
+  }, {
+    "id": "040fc664-61fa-4f2f-917a-27fc843b5dd3",
+    "name": "Add product to cart",
+    "commands": [{
+      "id": "a24ea22d-aeaa-4529-bd71-ccc2b9341200",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.notino.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f179820e-3a75-4123-9f75-ab9bcc58a1a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55d5e9c6-7e5e-43c6-9dc0-592e747f57b6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.sdGGTIiD3csOIkVfzuMg:nth-child(2)",
+      "targets": [
+        ["css=.sdGGTIiD3csOIkVfzuMg:nth-child(2)", "css:finder"],
+        ["xpath=//nav[@id='99fcf985-e183-4572-b66d-b4643f745fc6']/div/div[2]/div[2]/div/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2c07d358-b38f-4276-b497-73b0fe74c268",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.sdGGTIiD3csOIkVfzuMg:nth-child(2)",
+      "targets": [],
+      "value": "ДЕНЬ СВЯТОГО ВАЛЕНТИНА"
+    }, {
+      "id": "c813e1ab-f65f-4df3-b3cd-48e2a2998eb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sdGGTIiD3csOIkVfzuMg:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b8ac821-36a9-4e94-a342-45c1ff49ea00",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@onclick='window.giftNavigator.changePriceRange();']",
+      "targets": [
+        ["css=.gift-navigator__price-range:nth-child(1)", "css:finder"],
+        ["xpath=//div[@onclick='window.giftNavigator.changePriceRange();']", "xpath:attributes"],
+        ["xpath=//div[@id='categoryGiftNavigator3']/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "8a55d13d-c014-4287-9abc-694073ff43aa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@onclick='window.giftNavigator.changePriceRange();']",
+      "targets": [
+        ["css=#giftNavigatorProductList_1 .item:nth-child(2) .title strong", "css:finder"],
+        ["xpath=//div[@id='giftNavigatorProductList_1']/ul/li[2]/a/div/span[2]/strong", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/span[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Fresh Couture')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd5f6f8e-9a2a-4396-8794-c4e2fed7ea96",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[contains(text(),'зобразити все')]",
+      "targets": [
+        ["linkText=зобразити все", "linkText"],
+        ["css=.gift-navigator__category:nth-child(1) > .gift-navigator__category-link", "css:finder"],
+        ["xpath=//a[contains(text(),'зобразити все')]", "xpath:link"],
+        ["xpath=//div[@id='giftNavigatorCategoriesContainer']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.notino.ua/parfyumeriya-dlya-zhenshchin/?max=600')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'зобразити все')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b8b1839f-7d2c-4764-97ff-eee03b22b1db",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'зобразити все')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d44d2d65-64de-41d4-984b-296c9142777b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#ca-uid-3 .filter__icon",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "04398a6f-6889-4fee-ac4b-0fa51093a659",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ca-uid-3 .filter__icon",
+      "targets": [
+        ["css=#ca-uid-3 .filter__icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b230112c-889d-43f5-8464-f9688cca1432",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[contains(.,'Abercrombie & Fitch')]",
+      "targets": [
+        ["css=#brands-A .name", "css:finder"],
+        ["xpath=//li[@id='brands-A']/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Abercrombie & Fitch')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e4b32b9-f972-46e2-bfa1-d1cbb31b6a0b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Abercrombie & Fitch')]",
+      "targets": [],
+      "value": "Abercrombie & Fitch"
+    }, {
+      "id": "9e526835-1cc9-4728-abaf-54b865c0e7f4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Abercrombie & Fitch')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48b03a8f-e6c4-4db5-b1db-a1d2120f1419",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//h3[contains(.,'Naturally Fierce')]",
+      "targets": [
+        ["css=.sc-bqWxrE", "css:finder"],
+        ["xpath=//div[@id='productListWrapper']/div[2]/div/a/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Naturally Fierce')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2e2ee6ee-1044-4a6b-8309-9eec425429c4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h3[contains(.,'Naturally Fierce')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "925a04d5-6a01-45d4-b7b7-7fb380bc9905",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[@id='pd-buy-button']",
+      "targets": [
+        ["id=pd-buy-button", "id"],
+        ["css=#pd-buy-button", "css:finder"],
+        ["xpath=//button[@id='pd-buy-button']", "xpath:attributes"],
+        ["xpath=//div[@id='pdAddToCart']/div/div[3]/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'До кошика')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c906d34e-7e55-4ff6-a7b0-ea67c7fbced9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='pd-buy-button']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69e91dfa-714e-42ac-bee9-25d250c4b0b7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//button[contains(.,'Перейти до кошика')]",
+      "targets": [
+        ["css=.crAZVn:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app-99472ed7-224b-4866-834d-1ba8d960451e']/div/div/div/div/div/div[2]/div/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Перейти до кошика')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "5e9fa242-cc40-434f-97e2-6077a3323dec",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Перейти до кошика')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cec87738-9aa9-481d-96f8-fc2b6177ac96",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//h1[contains(.,'Кошик')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "27121f02-a647-4088-8387-87c6656aeb8f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h1[contains(.,'Кошик')]",
+      "targets": [
+        ["css=.sc-bcXHqe", "css:finder"],
+        ["xpath=//div[@id='app']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Кошик')]", "xpath:innerText"]
+      ],
+      "value": "Кошик"
+    }]
+  }],
+  "suites": [{
+    "id": "727cb957-a876-4228-86d0-f33c321edf3c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0b53b4cb-1b1f-49ff-bdba-01669382bf91"]
+  }],
+  "urls": ["https://www.notino.ua/"],
+  "plugins": []
+}
